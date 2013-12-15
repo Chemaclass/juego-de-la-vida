@@ -1,6 +1,7 @@
 package juegovida;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -13,11 +14,12 @@ public class JuegoVida {
     private static final char MUERTO = ' ';
 
     public static void main(String[] args) {
-        new JuegoVida().doMain(args);
+       // new JuegoVida().doMain(args); // <- consola
+        Vida.main(args); // <- gráfico
     }
 
     private void doMain(String[] args) {
-
+        
         Juego juego = new Juego(tablero);
         juego.start();
 
